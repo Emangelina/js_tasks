@@ -1,0 +1,77 @@
+/*And main settings*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat,sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.section {
+  height: 33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider__button {
+  color: blue;
+  font-size: 24px;
+}
+
+.slider__button:hover {
+  color: red;
+}
+
+.slider__display {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  overflow: hidden;
+  margin: 0 20px 0;
+}
+
+.slider__list {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 0;
+  transition: right .3s;
+}
+
+.slider__item {
+  width: 100px;
+  height: 100px;
+  background: #ffefd5;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}

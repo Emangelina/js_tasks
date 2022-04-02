@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задачи по JS DOM</title>
+  <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" href="modal.css">
+  <link rel="stylesheet" href="inputs.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <section class="section slider">
+        <a href="#" id="left" class="slider__button">←</a>
+          <div class="slider__display">
+            <ul class="slider__list" id="sliderList">
+              <li class="slider__item">1</li>
+              <li class="slider__item">2</li>
+              <li class="slider__item">3</li>
+              <li class="slider__item">4</li>
+              <li class="slider__item">5</li>
+              <li class="slider__item">6</li>
+              <li class="slider__item">7</li>
+              <li class="slider__item">8</li>
+              <li class="slider__item">9</li>
+            </ul>
+          </div>
+        <a href="#" id="right" class="slider__button">→</a>
+      </section>
+      <section class="section wrapper-section" id="modalBody">
+        <div class="wrapper-section__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem magnam ratione quasi alias adipisci molestias doloribus, provident eum natus rerum, numquam delectus cum at nobis consectetur deserunt perspiciatis eveniet temporibus.
+        </div>
+        <a href="#" class="wrapper-section__btn" id="openModalBtn">открыть</a>
+        <template id="overlayTemplate">
+          <div class="modal">
+            <a href="#" class="close-btn">X</a>
+            <div class="content"></div>
+        </div>
+        </template>
+      </section>
+      <section class="section inputs">
+        <div class="inputs__container">
+          <input type="number" min="0" id="number">
+          <input type="color" id="color">
+        </div>
+        <ul class="outList" id="outList"></ul>
+      </section>
+      </div>
+    </div>
+  <script src="slider.js"></script>
+  <script src="modal.js"></script>
+  <script src="inputs.js"></script>
+</body>
+</html>
+
