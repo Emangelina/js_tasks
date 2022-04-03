@@ -3,8 +3,8 @@ function getWorthyWorkers (workers) {
   let salarycompare = [];
 
   for (let i = 0; i<workers.length; i++) {
-    let a = workers[i].salary;
-    if (a > 1000) {
+    let salary = workers[i].salary;
+    if (salary < 1000) {
       salarycompare.push(workers[i].name);
     }
   }

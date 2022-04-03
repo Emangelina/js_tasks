@@ -6,9 +6,9 @@
   
 //   for (let i = 0; i < wordlist.length; i++) {
     
-//     let a = wordlist[i].toLowerCase();
-//     if (alphabet.includes(a) == true) {
-//       finalList.push(a);
+//     let letter = wordlist[i].toLowerCase();
+//     if (alphabet.includes(letter)) {
+//       finalList.push(letter);
 //     }
 //   }
 
@@ -18,20 +18,37 @@
 
 // getVowels("Привет, как дела!");
 
-//задача1 способ2 - модифицировала после просмотра воркшопа
-function getVowels (word) {
+// //задача1 способ2 - модифицировала после просмотра воркшопа
+// function getVowels (word) {
+//   let finalword ='';
+//   const alphabet = ["а", "я", "о", "ё", "у", "ю", "э", "е", "ы", "и"];
+  
+//   for (let i = 0; i < word.length; i++) {
+    
+//     let letter = word[i].toLowerCase();
+//     if (alphabet.includes(letter)) {
+//       finalword += letter;
+//     }
+//   }
+
+//   return finalword;
+// }
+
+// console.log(getVowels("Привет, как дела!"));
+
+function getConsonants (word) {
   let finalword ='';
   const alphabet = ["а", "я", "о", "ё", "у", "ю", "э", "е", "ы", "и"];
   
   for (let i = 0; i < word.length; i++) {
     
-    let a = word[i].toLowerCase();
-    if (alphabet.includes(a) == true) {
-      finalword += a;
+    let letter = word[i].toLowerCase();
+    if (!alphabet.includes(letter)) {
+      finalword += letter;
     }
   }
 
   return finalword;
 }
 
-console.log(getVowels("Привет, как дела!"));
+console.log(getConsonants("Привет, как дела!"));

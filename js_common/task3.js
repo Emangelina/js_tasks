@@ -1,12 +1,7 @@
 //задача3
 function isHtml(path) {
-  if (path.indexOf(".html") >= 0) {
-    return true;
-  }
-  else {
-    return false;
-  }
+  return path.slice(-5) == ".html";
 }
 
-const path = "/users/download/index.html";
+const path = "/users/down.htmlload/index";
 console.log(isHtml(path));

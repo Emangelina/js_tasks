@@ -1,32 +1,15 @@
 //доп задача.1
 //функция, определяющая четность числа
 function isEven(i) {
-  if (i % 2 == 0) {
-    return true;
-  }
-  else {
-    return false;
-  }
+  return i % 2 == 0;
 }
 
-console.log(isEven(987));
-
 //фильтр четных чисел массива.2
-function filter(list) {
+function filter(list, someFunction) {
   let filteredList = [];
   for (let i = 0; i<list.length; i++) {
     
-    function isEven(i) {
-      if (list[i] % 2 == 0) {
-        return true;
-      }
-      else {
-        return false;
-      }
-    }
-    let result = isEven(i);
-    
-    if (result == true) {
+    if (someFunction(list[i]) == true) {
       filteredList.push(list[i])
     }
   }
@@ -34,4 +17,4 @@ function filter(list) {
 }
 
 var list = [2, 2, 4, 89, 11, 10, 6, 4, 2, 0, 90, 1000, 1243, 500, 130000]
-filter(list);
+filter(list, isEven);
