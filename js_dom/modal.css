@@ -62,18 +62,32 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background: rgb(167, 20, 20);
-  color: #fff;
+  /* background: rgb(167, 20, 20);
+  color: #fff; */
   position: absolute;
   top: 0px;
   right: 0px;
   transform:translate(50%, -50%);
-  /* color: rgb(167, 20, 20); */
+  color: rgb(167, 20, 20);
+
+
+}
+
+.close-btn:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #fff;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  z-index: -100;
 }
 
 .close-btn:hover {
-  background: rgb(211, 56, 56);
+  /* background: rgb(211, 56, 56); */
+  color: rgb(211, 56, 56);
 }
