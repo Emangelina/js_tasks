@@ -26,6 +26,7 @@ function createModal(content) {
 
   closeBtn.addEventListener('click', function(e) {
     e.preventDefault;
+    e.stopPropagation();
     modalBody.removeChild(overlay);
   })
   
